@@ -1,0 +1,518 @@
+/* ------fonts------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* -----Common styles----- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 3% 5% 0 5%;
+}
+
+/* ----top banner styles---- */
+.top-banner {
+    background: black;
+    height: 550px;
+    border-radius: 25px;
+    padding: 20px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.banner-text {
+
+    width: 480px;
+    padding: 0 0 45px 0;
+
+}
+
+.banner-text p {
+
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 220;
+    margin-bottom: 40px;
+}
+
+.banner-text h1 {
+    color: white;
+    font-weight: 650;
+    font-size: 62px;
+    margin: 0 0 10px 0;
+    line-height: 65px;
+}
+
+
+.banner-btn {
+    color: #FFFFFF;
+    background: #df083e;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 26px;
+    border-radius: 8px;
+}
+
+.banner-btn:hover {
+    box-shadow: 0px 2px 6px rgb(214, 77, 77);
+    background: #d6063a;
+
+}
+
+.banner-btn i {
+    margin-left: 8px;
+}
+
+.banner-img img {
+    width: 530px;
+}
+
+.banner-img2 img {
+    width: 224px;
+}
+
+@keyframes ball {
+    0% {
+
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ball {
+    position: absolute;
+    right: 650px;
+    opacity: .85;
+    top: 90px;
+
+    width: 120px;
+    animation: ball 4s linear infinite;
+}
+
+
+
+/* ----blog section style---- */
+.blog-container {
+    margin: 100px 0 100px 0;
+    gap: 30px;
+    display: flex;
+
+}
+
+.side-manu {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 320px;
+    border-radius: 15px;
+    gap: 32px;
+}
+
+.manu-btn {
+
+    background: white;
+    width: 255px;
+    height: 63px;
+    line-height: 64px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.manu-btn:hover {
+    box-shadow: 1px 1px 10px white;
+}
+
+.active-btn {
+    background: #df083e;
+}
+
+.manu-btn a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    font-weight: 600;
+}
+
+.active-link {
+    color: rgb(236, 217, 217) !important;
+}
+
+/* ----blogs style-----  */
+
+.blogs {
+    display: grid;
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.blog {
+    border: 1px solid white;
+    width: 279px;
+    height: 362px;
+    border-radius: 100px;
+}
+
+.blog-info {
+    padding: 10px 16px 16px 16px;
+}
+
+.blog img {
+    width: 100%;
+}
+
+
+.blog-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.blog-btn:hover {
+    background: #cec4c4;
+}
+
+.blog-btn a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+.blog-component {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.blog-info h4 {
+    font-size: 20px;
+    font-weight: 550;
+    margin: 15px 0 0 0;
+}
+
+.blog-component i {
+    margin-right: 7px;
+}
+
+
+
+.blog-component div {
+    color: black;
+    margin-right: 30px;
+    font-size: 16px;
+
+}
+
+
+/* -------footer style-------- */
+footer {
+    padding: 50px 130px 50px 130px;
+    background: black;
+}
+
+footer h2 {
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+
+footer hr {
+    border-top: 1px white;
+    opacity: .2;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+footer ul:nth-child(4) li {
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+footer ul:nth-child(4) li a {
+    font-size: 30px;
+    line-height: 50px;
+    color: #314bcd;
+}
+
+.index-footer ul:nth-child(4) li a {
+    color: #054082;
+}
+
+/* -------------------------------
+    style for match.html file 
+   ------------------------------- */
+
+/* top banner style */
+.top-banner-match {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+    border-radius: 25px;
+    padding: 20px 50px 0 50px;
+}
+
+.match-banner-btn {
+    background: #df083e;
+}
+
+.match-banner-btn:hover {
+    background: #d6063a;
+    box-shadow: 0px 2px 8px #79013d;
+}
+
+.ball2 {
+    position: absolute;
+    width: 90px;
+    right: 170px;
+    top: 530px;
+    animation: ball 5s linear infinite;
+}
+
+
+/*------- matchs ------- */
+
+.match-manu-color {
+    background: black;
+}
+
+
+.match-container {
+    margin: 100px 0 100px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.match {
+    width: 250px;
+    height: 150px;
+    padding: 30px 15px 30px 15px;
+    border: 1px solid white;
+    border-radius: 11px;
+
+}
+
+
+.match-active-btn {
+    background: #df083e;
+}
+
+.matchs {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.match-time {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(40, 38, 38);
+}
+
+
+.team {
+    display: flex;
+    gap: 20px;
+}
+
+.match img {
+    width: 100%;
+}
+
+.match-info {
+    padding: 10px 15px 15px 15px;
+}
+
+.match-info h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/*------------------------------------------
+   Responsive design for small device(index.html) 
+------------------------------------------ */
+@media only screen and (max-width:576px) {
+    .top-banner {
+        flex-direction: column;
+    }
+
+    .banner-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 10px 0;
+    }
+
+    .banner-text h1 {
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .banner-text p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .banner-img img {
+        width: 286px;
+    }
+
+    .ball {
+        position: absolute;
+        width: 50px;
+        opacity: .84;
+        top: 165px;
+        left: 155px;
+    }
+
+    /* ---blog container--- */
+    .blog-container {
+        flex-direction: column;
+        margin: 50px 0 50px 0;
+        align-items: center;
+    }
+
+    .side-manu {
+        background: none;
+    }
+
+    .manu-btn {
+        border: 1px solid #a8a8a8;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ----footer style----- */
+    footer {
+        padding: 20px 15px 20px 15px;
+    }
+
+    footer ul:nth-child(3) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    footer ul:nth-child(4) {
+        padding: 0;
+    }
+
+    footer ul:nth-child(4) li {
+        background: #969696;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .index-footer ul:nth-child(4) li a {
+        font-size: 15px;
+        line-height: 30px;
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------
+   Responsive design for small device(match.html) 
+------------------------------------------ */
+@media only screen and (max-width:576px) {
+
+    .top-banner-match {
+        flex-direction: column;
+    }
+
+    .top-banner-match p {
+        margin: 10px 0 15px 0;
+    }
+
+    .banner-img2 img {
+        width: 287px;
+    }
+
+    .ball2 {
+        position: absolute;
+        width: 65px;
+        left: 266px;
+        top: 520px;
+    }
+
+    .match-container {
+        margin: 50px 0 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-manu {
+        justify-content: center;
+    }
+
+    .matchs {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .match-footer ul:nth-child(4) li a {
+        font-size: 15px;
+        line-height: 30px;
+        color: black;
+    }
+}
