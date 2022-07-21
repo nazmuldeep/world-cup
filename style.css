@@ -609,6 +609,7 @@ footer ul:nth-child(4) li a {
         color: white;
     }
 
+    /* ----footer for medium devices---- */
     footer {
         padding: 30px 130px 30px 130px;
     }
